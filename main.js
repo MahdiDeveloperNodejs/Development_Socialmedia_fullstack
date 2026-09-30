@@ -6,10 +6,10 @@ const AllExpansionHandler = require("./src/common/expansion/AllExpansionHandler"
 const NotFoundHandler = require("./src/common/expansion/NotFoundHandler");
 const setHeaders = require("./src/guard/header.guard");
 
-
 function main() {
   const app = express();
   const PORT = process.env.PORT;
+  require("./src/config/config.mongodb");
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
   app.use(setHeaders);
