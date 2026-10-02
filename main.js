@@ -5,6 +5,7 @@ const mainRouter = require("./src/routes");
 const AllExpansionHandler = require("./src/common/expansion/AllExpansionHandler");
 const NotFoundHandler = require("./src/common/expansion/NotFoundHandler");
 const setHeaders = require("./src/guard/header.guard");
+const swaggerConfig = require("./src/config/config.swagger");
 
 function main() {
   const app = express();
@@ -22,6 +23,7 @@ function main() {
   app.set("views", path.join(__dirname, "views"));
   app.use(mainRouter);
   //! Error Handler and app
+  swaggerConfig(app)
   NotFoundHandler(app);
   AllExpansionHandler(app);
   app.listen(PORT, () => {
