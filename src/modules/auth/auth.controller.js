@@ -1,25 +1,16 @@
-const { default: autoBind } = require("auto-bind");
-const authService = require("./auth.service");
+const autoBind = require("auto-bind");
+const UserModel = require("../user/user.model");
 
 class AuthController {
-  #service;
+  #Model;
   constructor() {
     autoBind(this);
-    this.#service = authService;
+    this.#Model = UserModel;
   }
-
   async create(req, res, next) {
     try {
-      const { email, username, name, password } = req.body;
-      await this.#service.create({
-        email,
-        username,
-        name,
-        password,
-      });
-      return res.status(201).json({
-        message: AuthMessages.CreatedSuccessFully,
-      });
+      const { name, email, password, username } = req.body;
+      console.log("name, email, password, username");
     } catch (error) {
       next(error);
     }

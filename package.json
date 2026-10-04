@@ -11,7 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "auto-bind": "^5.0.1",
+    "auto-bind": "^3.0.0",
     "bcryptjs": "^3.0.3",
     "dotenv": "^18.0.5",
     "ejs": "^6.0.1",

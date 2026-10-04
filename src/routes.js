@@ -5,8 +5,8 @@ const mainRouter = Router();
 
 mainRouter.use("/Auth", AuthRouter);
 
-mainRouter.get("/", (req, res) => {
-  return res.render("index");
-});
+// mainRouter.get("/", (req, res) => {
+//   return res.render("index");
+// });
 
 module.exports = mainRouter;
