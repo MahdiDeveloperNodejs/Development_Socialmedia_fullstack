@@ -38,3 +38,7 @@ exports.create = async (req, res, next) => {
     next(error);
   }
 };
+
+exports.registerer = async (req, res, next) => {
+ return res.render("/views/register.ejs")
+};

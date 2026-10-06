@@ -3,7 +3,7 @@ const authController = require("./auth.controller");
 
 const router = Router();
 
-router.post("/create", authController.create);
+router.route("/create").get(authController.registerer).post(authController.create);
 
 module.exports = {
   AuthRouter: router,

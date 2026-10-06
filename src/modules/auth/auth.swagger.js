@@ -19,9 +19,7 @@
  *              properties:
  *                  name:
  *                       type: string
-                  profilePicture:
- type: string
- description: Optional profile image URL; defaults to /images/profile-1.jpg
+ *              profilePicture:
  *                  email:
  *                      type: string
  *                  username:
