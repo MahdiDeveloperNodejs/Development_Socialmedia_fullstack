@@ -40,5 +40,16 @@ exports.create = async (req, res, next) => {
 };
 
 exports.registerer = async (req, res, next) => {
- return res.render("/views/register.ejs")
+  return res.render("/views/register.ejs");
+};
+
+exports.login = async (req, res, next) => {
+  const { user, fullname } = req.body;
+
+  if ((user, fullname)) {
+    console.log("vjode ndared");
+  } else {
+    console.log("server run start");
+  }
+  return res.render("../../../views/register.ejs");
 };

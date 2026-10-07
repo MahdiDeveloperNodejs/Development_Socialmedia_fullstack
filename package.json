@@ -29,5 +29,14 @@
     "swagger-ui-express": "^5.0.1",
     "uuid": "^14.0.2",
     "yup": "^1.7.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahdiDeveloperNodejs/Development_Socialmedia_fullstack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MahdiDeveloperNodejs/Development_Socialmedia_fullstack/issues"
+  },
+  "homepage": "https://github.com/MahdiDeveloperNodejs/Development_Socialmedia_fullstack#readme"
 }
